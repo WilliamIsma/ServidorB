@@ -1,0 +1,39 @@
+<h1>Celular</h1>
+<form action="/celular/agregar" method="POST">
+    <div>
+      <label for="nombre">Escribe tu Clave:</label>
+      <input type="text" name="clave" placeholder="Clave" id="clave"/>
+    </div>
+    <div>
+      <label for="marca">Escribe Marca:</label>
+      <input type="text" name="marca" placeholder="Marca" id="marca"/>
+    </div>
+    <div>
+      <label for="precio">Escribe Precio:</label>
+      <input type="text" name="precio" placeholder="precio" id="precio"/>
+    </div>
+    <div>
+      <label for="fechaLanzamiento">Selecciona Fecha:</label>
+      <input type="date" name="fechaLanzamiento" placeholder="12/01/0000" id="fechaLanzamiento"/>
+    </div>
+    <div>
+      <label for="ram">seleciona ram:</label>
+         <select name="ram"id="ram">
+        <option value=""></option>
+         <option value="2">2</option>
+         <option value="4">4</option>
+         <option value="8">8</option>
+         <option value="16">16</option>
+         <option value="32">32</option>
+      </select>
+    </div>
+    <div>
+      <label for="almacenamiento">Escribe el almacenamiento:</label>
+      <input type="number" name="almacenamiento" placeholder="almacenamiento" id="almacenamiento"/>
+    </div>
+    <div>
+      <label for="cantCamaras">Cantidad de camaras:</label>
+      <input type="text" name="cantCamaras" placeholder="cantCamaras" id="cantCamaras"/>
+    </div>
+    <button>Agregar</button> 
+</form>

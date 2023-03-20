@@ -1,0 +1,42 @@
+<table>
+    <thead>
+        <tr>
+            <th>Num.</th>
+            <th>Clave</th>
+            <th>Marca</th>
+            <th>Precio</th>
+            <th>FechaLanzamiento</th>
+            <th>Ram</th>
+            <th>Almacenamiento</th>
+            <th>CantCamaras</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each celular}}
+        <tr>
+            <td>{{@index}}</td>
+            <td>{{clave}}</td>
+            <td>{{marca}}</td>
+            <td>{{precio}}</td>
+            <td>{{fechaLanzamiento}}</td>
+            <td>{{ram}}</td>
+            <td>{{almacenamiento}}</td>
+            <td>{{cantCamaras}}</td>
+            <td>
+                {{#if opcion}}
+                    <a href="/status/{{_id}}">No disponible</a>
+                {{else}}
+                    <a href="/status/{{_id}}">Disponible</a>
+                {{/if}}
+                <a href="/update/{{_id}}">Editar</a>
+                <a href="/delete/{{_id}}">Eliminar</a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+
+ 
+    
+   

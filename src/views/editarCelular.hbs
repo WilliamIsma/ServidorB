@@ -1,0 +1,38 @@
+<form action="/update/{{celular._id}}" method="POST">
+<div>
+    <label for="clave">Modifica Clave:</label>
+    <input type="text" name="clave" placeholder="clave" value="{{celular.clave}}">
+</div>
+<div>
+    <label for="marca">Modifica Marca:</label>
+    <input type="text" name="marca" placeholder="marca" value="{{celular.marca}}">
+</div>
+<div>
+    <label for="precio">Modifica Precio:</label>
+    <input type="number" name="precio" placeholder="precio" value="{{celular.precio}}">
+</div>
+<div>
+    <label for="fechaNac">Modifica Fecha de lanzamiento</label>
+    <input type="text" name="fechaLanzamiento" placeholder="fechaLanzamiento" value="{{celular.fechaLanzamiento}}">
+</div>
+<div>
+     <label for="ram">seleciona RAM:</label>
+         <select name="ram"id="ram">
+        <option value=""></option>
+         <option value="2">2</option>
+         <option value="4">4</option>
+         <option value="8">8</option>
+         <option value="16">16</option>
+         <option value="32">32</option>
+      </select>
+</div>
+<div>
+    <label for="almacenamiento">Modifica almacenamiento:</label>
+    <input type="number" name="almacenamiento" placeholder="almacenamiento" value="{{celular.almacenamiento}}">
+</div>
+<div>
+    <label for="cantCamaras">Modifica Camaras:</label>
+    <input type="cantCamaras" name="cantCamaras" placeholder="cantCamaras" value="{{celular.cantCamaras}}">
+</div>
+<button>Editar</button>
+</form>
